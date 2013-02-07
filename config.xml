@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.robkohr.quickrpgdice"
+        versionCode="2013.2.7" 
+        version   = "20130207">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Quick RPG Dice</name>
+
+    <description>
+      A powerful yet easy to use dice roller.
+    </description>
+
+    <author href="http://robkohr.com" email="spam@robkohr.com">
+      Robert Kohr
+    </author>
+    
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <icon src="icon.png" />
+    
+    <icon src="icons/ios/icon.png" width="57" height="57" />
+    <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icons/ios/icon_at_2x.png" width="114" height="114" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="android" gap:density="xhdpi" />
+
+
+</widget>

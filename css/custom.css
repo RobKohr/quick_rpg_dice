@@ -15,12 +15,14 @@ body{
         left:0px;
         width:100px;
 }
-#rolls #recent{ 
-                color:red;
-                font-size:1.1em;
-                margin-bottom:5px;
-                position:relative;
-                top:0px;
+#recent{ 
+         background:black;
+         color:red;
+         font-size:2em;
+         position:relative;
+         top:0px;
+         margin:0px;
+         padding:5px;
 } 
 
 #stage{ 

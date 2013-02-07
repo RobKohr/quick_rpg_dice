@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var multiple = 1;
-    multiple_max = 10;
+    multiple_max = 6;
     $('#multiple').click(function(){
 	multiple++;
 	if(multiple>multiple_max){
@@ -30,12 +30,14 @@ $(document).ready(function(){
 		die = die_name.split('d');
 		value = die[1];
 		outcome = roll(value, multiple);
-		$('#recent').clone().removeAttr('id').
-		    addClass('roll').prependTo('#history');
 		$('#recent #outcome').text(outcome.name+': '+outcome.total);
 		if(multiple==1)
 		    outcome.dice = '';
 		$('#recent #each').text(outcome.dice);
+
+		$('#recent').clone().removeAttr('id').
+		    addClass('roll').prependTo('#history');
+
 	    });
     };
     function roll(value, quantity){

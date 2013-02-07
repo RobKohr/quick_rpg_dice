@@ -8,6 +8,9 @@ $(document).ready(function(){
 	}
 	$('#multiple').text(multiple+'x');
     })
+    var sound = 'sounds/dice.wav';
+    var snd = new Audio(sound); // buffers automatically when created
+
     function createDice(){
 	dice = [
 	    '1d2','1d4','1d6','1d8','1d10','1d12','1d100'
@@ -37,7 +40,7 @@ $(document).ready(function(){
 
 		$('#recent').clone().removeAttr('id').
 		    addClass('roll').prependTo('#history');
-
+		snd.play();
 	    });
     };
     function roll(value, quantity){
@@ -52,5 +55,4 @@ $(document).ready(function(){
 	return outcome;
     }
     createDice();
-
 });

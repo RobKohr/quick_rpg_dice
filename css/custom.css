@@ -1,0 +1,52 @@
+body{ 
+      background:black;
+      color:white;
+ }
+
+#ticker{ 
+        background:black;
+        width:115px;
+        height:100%;
+        overflow:hidden;
+        }
+#rolls{ 
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100px;
+}
+#rolls #recent{ 
+                color:red;
+                font-size:1.1em;
+                margin-bottom:5px;
+                position:relative;
+                top:0px;
+} 
+
+#stage{ 
+       background:white;
+ }
+
+#multiple{ 
+           font-size:2em;
+           margin:20px;
+           float:left;
+
+ }
+
+#dice img{ 
+           width:100px;
+           height:100px;
+           padding:0px;
+           margin:0px;
+ }
+
+#dice #die_1d100{ 
+        width:100px;
+        height:100px;
+ }
+
+#each{ 
+       font-size:0.7em;
+       margin-bottom:4px;
+ }

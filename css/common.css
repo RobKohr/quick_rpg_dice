@@ -1,0 +1,58 @@
+/*common css stuff I like to use in all projects*/
+ 
+/* ==Table styling== */
+    
+.table{
+  display:table;
+}
+
+.table > .row,
+.bigtable > .row
+{
+  display:table-row;
+}
+
+.table > .row > div,
+.bigtable > .row > div{
+  display:table-cell
+}
+
+/*adding some extras just to make it more obvious*/
+.bigtable{
+  display:table;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  position:absolute;
+}
+
+/* ==Button Styling== */
+.button {
+    display: inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#50A7E7), color-stop(100%,#3679CF));
+    background: -moz-linear-gradient(center top, #50A7E7 0%, #3679CF 100%);
+    -webkit-box-shadow: 0px 1px 0px #61b5ff inset, 0px 1px 1px 0px #bdbdbd;
+    -moz-box-shadow: 0px 1px 0px #61b5ff inset, 0px 1px 1px 0px #bdbdbd;
+    box-shadow: 0px 1px 0px #61b5ff inset, 0px 1px 1px 0px #bdbdbd;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: 0px -1px 0px #004d80;
+    padding: 2px 8px;
+    border-color: #4081AF;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#51A8E7), color-stop(100%,#206BCB));
+    background: -moz-linear-gradient(center top, #51A8E7 0%, #206BCB 100%);
+}
+.button:active {
+    -webkit-box-shadow: 0px 0px 15px #001a47 inset;
+    -moz-box-shadow: 0px 0px 15px #001a47 inset;
+    box-shadow: 0px 0px 15px #001a47 inset;
+}

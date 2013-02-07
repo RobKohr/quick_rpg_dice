@@ -1,0 +1,3 @@
+Show dice
+Click on dice and show number
+play sound

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var multiple = 1;
     multiple_max = 6;
-    $('#multiple').click(function(){
+    $('#multiple').touchstart(function(){
 	multiple++;
 	if(multiple>multiple_max){
 	    multiple = 1;
@@ -30,7 +30,7 @@ $(document).ready(function(){
     function setDiceEvents(){
 	$('#dice .need_event').
 	    removeClass('.need_event').
-	    click(function(){
+	    touchstart(function(){
 		die_name = $(this).attr('data-die');
 		die = die_name.split('d');
 		value = die[1];

@@ -1,10 +1,15 @@
 $(document).ready(function(){
+    if(typeof(document.body.ontouchstart) == "undefined"){
+	var click = 'click';
+    }else{
+	var click = 'touchstart';
+    }
 
     var multiple = 1;
     multiple_max = 6;
     var coin_state = 'heads';
     var dice_path = 'img/dice/all/'
-    $('#multiple').on('touchstart click', function(){
+    $('#multiple').on(click, function(){
 	multiple++;
 	if(multiple>multiple_max){
 	    multiple = 1;
@@ -33,7 +38,7 @@ $(document).ready(function(){
     function setDiceEvents(){
 	$('#dice .need_event').
 	    removeClass('.need_event').
-	    on('touchstart click', function(){
+	    on(click, function(){
 		$('#recent').show();
 		die_name = $(this).attr('data-die');
 		die = die_name.split('d');

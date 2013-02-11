@@ -34,6 +34,7 @@ $(document).ready(function(){
 	$('#dice .need_event').
 	    removeClass('.need_event').
 	    on('touchstart click', function(){
+		$('#recent').show();
 		die_name = $(this).attr('data-die');
 		die = die_name.split('d');
 		value = die[1];
@@ -46,6 +47,7 @@ $(document).ready(function(){
 		$('#recent').clone().removeAttr('id').
 		    addClass('roll').prependTo('#history');
 		$('#instructions').hide();
+
 		if(value == '2'){
 		    $('#die_1d2').attr('src', dice_path+coin_state+'.jpg');
 		}

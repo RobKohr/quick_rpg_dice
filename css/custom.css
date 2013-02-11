@@ -20,11 +20,11 @@ body{
              }
 
 #instructions{ 
-               padding-left:10px;
-               margin-left:10px;
+
  }
 
 #recent{ 
+         display:none;
          background:black;
          color:red;
          font-size:2em;
@@ -46,6 +46,7 @@ body{
 #multiple{ 
            font-size:2em;
            float:left;
+           margin-bottom:4px;
  }
 
 #dice{ 

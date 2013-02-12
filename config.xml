@@ -2,8 +2,8 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.robkohr.quickrpgdice"
-        versionCode="20130212" 
-        version   = "20130212">
+        versionCode="20130213" 
+        version   = "20130213">
 
     <!-- versionCode is optional and Android only -->
 
@@ -28,6 +28,7 @@ rather than some custom poorly tested physics model.
     </author>
     <changes>
       2013-02-12
+       Added new icons and modified layout
        Increased max dice rolled to 10
        Removed unneeded permissions
       2013-02-11

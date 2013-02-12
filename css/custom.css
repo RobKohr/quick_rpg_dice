@@ -15,8 +15,14 @@ body{
         left:0px;
         width:100px;
 }
-#recent .coin_state{ 
-             font-size:0.5em;
+
+.each{ 
+       font-size:0.7em;
+       margin-bottom:4px;
+ }
+
+#recent .each{ 
+             font-size:0.3em;
              }
 
 #instructions{ 
@@ -30,9 +36,10 @@ body{
          font-size:2em;
          position:relative;
          top:0px;
+         right:0px;
          margin:0px;
          padding:5px;
-         float:left;
+         padding-left:2.3em;
 } 
 
 #recent .quantity{ 
@@ -40,13 +47,24 @@ body{
  }
 
 #stage{ 
-       background:black;
+       background:white;
+        position:relative;
+ }
+#stage_top{ 
+            background:black;
+            height:5em;
+            left:0px;
+            right:0px;
+            position:relative
  }
 
 #multiple{ 
            font-size:2em;
-           float:left;
+           position:absolute;
+           top:0px;
+           left:0px;
            margin-bottom:4px;
+           z-index:2;
  }
 
 #dice{ 
@@ -65,7 +83,3 @@ body{
         height:100px;
  }
 
-#each{ 
-       font-size:0.7em;
-       margin-bottom:4px;
- }

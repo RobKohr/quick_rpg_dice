@@ -44,10 +44,10 @@ $(document).ready(function(){
 		die = die_name.split('d');
 		value = die[1];
 		outcome = roll(value, multiple);
-		$('#recent #outcome').html(outcome.name+': '+outcome.total);
+		$('#recent .outcome').html(outcome.name+': '+outcome.total);
 		if(multiple==1)
 		    outcome.dice = '';
-		$('#recent #each').html(outcome.dice+'&nbsp;');
+		$('#recent .each').html(outcome.dice+'&nbsp;');
 
 		$('#recent').clone().removeAttr('id').
 		    addClass('roll').prependTo('#history');

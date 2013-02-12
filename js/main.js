@@ -16,11 +16,14 @@ $(document).ready(function(){
 	}
 	$('#multiple').text(multiple+'d');
     })
-    var sound = 'sounds/dice.wav';
-    if(typeof(Media)=='undefined')
-	var snd = new Audio(sound); // buffers automatically when created
-    else
-	var snd = new Media(sound); // buffers automatically when created
+    var play_sounds = 0;
+    if(play_sounds){
+	var sound = 'sounds/dice.wav';
+	if(typeof(Media)=='undefined')
+	    var snd = new Audio(sound); // buffers automatically when created
+	else
+	    var snd = new Media(sound); // buffers automatically when created
+    }
     function createDice(){
 	dice = [
 	    '1d2','1d4','1d6','1d8','1d10','1d12','1d20','1d100'
@@ -56,7 +59,8 @@ $(document).ready(function(){
 		if(value == '2'){
 		    $('#die_1d2').attr('src', dice_path+coin_state+'.jpg');
 		}
-		snd.play();
+		if(play_sounds)
+		    snd.play();
 	    });
     };
     function roll(value, quantity){

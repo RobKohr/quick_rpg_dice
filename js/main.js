@@ -6,7 +6,7 @@ $(document).ready(function(){
     }
 
     var multiple = 1;
-    multiple_max = 6;
+    multiple_max = 10;
     var coin_state = 'heads';
     var dice_path = 'img/dice/all/'
     $('#multiple').on(click, function(){

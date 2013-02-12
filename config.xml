@@ -2,21 +2,45 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.robkohr.quickrpgdice"
-        versionCode="20130211" 
-        version   = "20130211">
+        versionCode="20130212" 
+        version   = "20130212">
 
     <!-- versionCode is optional and Android only -->
 
     <name>Quick RPG Dice</name>
 
     <description>
-      A powerful yet easy to use dice roller.
-    </description>
+A powerful yet easy to use dice roller. 
 
+This was created out of a need to have a useful and fast dice roller that had
+a set of features I didn't see in any other dice rollers in the storefront.
+
+* Up to 10 dice can be rolled at time
+* Dice with 2, 4, 6, 8, 10, 12, 20, and 100 sides
+* A single screen with no complex config menus
+* Lightning fast - sorry but 3d dice are too slow
+* Relyably random - uses well tested system libriaries for random number generation 
+rather than some custom poorly tested physics model.
+* A ticker so you can see the entire roll history since the app started
+    </description>
     <author href="http://robkohr.com" email="spam@robkohr.com">
       Robert Kohr
     </author>
-    
+    <changes>
+      2013-02-12
+       Increased max dice rolled to 10
+       Removed unneeded permissions
+      2013-02-11
+       Fixed some touch events
+       Added heads and tails coins and 1d20
+       Moved multiple button to top of screen
+      2013-02-07
+       First store version
+       Faster clicking speed
+       Reducing assets to reduce footprint
+       Moved result to top of screen
+    </changes>
+    <preference name="permissions" value="none"/>    
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="true" />

@@ -50,6 +50,13 @@ body{
        background:white;
         position:relative;
  }
+
+#recent .coin_state{ 
+             font-size:0.5em;
+ }
+#history .coin_state{ 
+             font-size:0.8em;
+ }
 #stage_top{ 
             background:black;
             height:5em;

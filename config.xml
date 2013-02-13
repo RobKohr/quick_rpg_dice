@@ -27,6 +27,8 @@ rather than some custom poorly tested physics model.
       Robert Kohr
     </author>
     <changes>
+      2013-02-13
+       Made it so it can be viewed in any orientation
       2013-02-12
        Added new icons and modified layout
        Increased max dice rolled to 10
@@ -42,7 +44,7 @@ rather than some custom poorly tested physics model.
        Moved result to top of screen
     </changes>
     <preference name="permissions" value="none"/>    
-    <preference name="orientation" value="portrait" />
+    <preference name="orientation" value="default" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="true" />
     <icon src="icon.png" />

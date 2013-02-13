@@ -48,4 +48,7 @@ rather than some custom poorly tested physics model.
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="true" />
     <icon src="icon.png" />
+    <icon src="icon-57.png" width="57" height="57" />
+    <icon src="icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icon-114.png" width="114" height="114" />
 </widget>

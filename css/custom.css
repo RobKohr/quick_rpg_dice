@@ -6,7 +6,10 @@ body{
 #ticker{ 
         background:black;
         width:115px;
-        height:100%;
+        top:0px;
+         bottom:0px;
+         left:0px;
+         position:relative;
         overflow:hidden;
         }
 #rolls{ 
@@ -79,14 +82,21 @@ body{
        clear:both;
  }
 #dice img{ 
-           width:100px;
-           height:100px;
+           width:30px;
+           height:30px;
            padding:0px;
            margin:0px;
  }
 
-#dice #die_1d100{ 
-        width:100px;
-        height:100px;
- }
+html, body {
+  overflow: hidden;
+}
 
+#trashcan{ 
+           position:absolute;
+           bottom:0px;
+           right:0px;
+           padding:2px;
+           padding-left:20px;
+           padding-top:20px;
+ }

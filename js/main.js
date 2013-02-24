@@ -35,7 +35,28 @@ $(document).ready(function(){
 	    $('#dice').append(html);
 	    console.log('here');
 	}
+	resizeDice();
 	setDiceEvents();
+    }
+
+    function resizeDice(){
+	var w = $(window).width() - $('#ticker').width()
+	var h = $(window).height() - $('#stage_top').height();
+	var max_image_size = 300;
+	var number_of_dice = 8;
+	for(var i = max_image_size; i>10; i = i-10){
+	    var image_size = i;
+	    var columns = Math.floor((w)/image_size);
+	    var rows = Math.floor((h-20)/image_size);
+	    var spaces = columns*rows;
+	    console.log({w:w, h:h, c:columns, r:rows, is:image_size, s:spaces});
+	    if(spaces>=number_of_dice)
+		break;
+	}
+	image_size = image_size - 0;
+	$('#stage img').width(image_size);
+	$('#stage img').height(image_size);
+
     }
 
     function setDiceEvents(){
@@ -51,9 +72,11 @@ $(document).ready(function(){
 		if(multiple==1)
 		    outcome.dice = '';
 		$('#recent .each').html(outcome.dice+'&nbsp;');
-
+		$('#history #instructions').remove();
 		$('#recent').clone().removeAttr('id').
 		    addClass('roll').prependTo('#history');
+		removeHistoryItemsBelowWindow();
+
 		$('#instructions').hide();
 
 		if(value == '2'){
@@ -63,6 +86,21 @@ $(document).ready(function(){
 		    snd.play();
 	    });
     };
+    $('#trashcan').click(function(){
+	$('#history').empty();
+    });
+    $(window).resize(function(){
+	resizeDice();
+	removeHistoryItemsBelowWindow();
+    });
+
+    function removeHistoryItemsBelowWindow(){
+	var history = $('#history');
+	while(history.height() > $(window).height()){
+	    $('#history .roll').last().remove();
+	}
+    }
+
     function roll(value, quantity){
 	var outcome = {total:0, dice:'', name:'<span class="quantity">'+quantity+'d</span>'+value};
 	comma = '';

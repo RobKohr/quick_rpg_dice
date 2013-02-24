@@ -2,8 +2,8 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.robkohr.quickrpgdice"
-        versionCode="20130213" 
-        version   = "20130213">
+        versionCode="20130222" 
+        version   = "20130222">
 
     <!-- versionCode is optional and Android only -->
 
@@ -27,6 +27,9 @@ rather than some custom poorly tested physics model.
       Robert Kohr
     </author>
     <changes>
+      2013-02-22
+       Added trash can to delete history
+       Made dice resize automatically to fill screen
       2013-02-13
        Made it so it can be viewed in any orientation
       2013-02-12
